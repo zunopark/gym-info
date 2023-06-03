@@ -5,11 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>벨그라운드짐</title>
+	<link rel="shortcut icon" href="./img/logo.png">
 	<link rel="stylesheet" href="../dist/output.css"></link>
 </head>
 <body>
-    <main class="container mx-auto">
-        <h1 class="mb-6 p-8 text-neutral-950 text-2xl underline decoration-1 underline underline-offset-8">트레이너 소개</h1>
-    </main>
+    <div id="wrap">
+		<header class="w-full lg:h-[100px] h-[80px] before:content-[''] before:absolute before:bg-gradient-to-b before:from-[rgba(0,0,0,.25)] before:w-full before:h-[120px] z-[100]">
+			<div class="container flex items-center justify-between relative h-full mx-auto lg:px-[40px] px-[10px] ease-out duration-300 z-5">
+				<h1>
+					<a href="index.html" class="block bg-[url('../public/img/logo.png')] bg-no-repeat bg-center bg-cover lg:w-[80px] w-[60px] lg:h-[80px] h-[60px] text-[0] leading-[0] ease-out duration-300">BELL GROUND GYM</a>
+				</h1>
+				<nav class="lg:overflow-y-hidden overflow-y-scroll lg:w-fit w-[calc(100%-90px)] scrollbar-hide">
+					<ul class="flex w-fit ml-auto">
+						<li class="flex-1"><a href="profile.html" class="lg:px-[15px] px-[7px] lg:text-[20px] text-[16px] text-[#fff] font-medium tracking-tight hover:text-[#006737] whitespace-nowrap ease-out duration-100">인사말</a></li>
+						<li class="flex-[0 0 auto] lg:ml-[25px] ml-[12px]"><a href="present.html" class="lg:px-[15px] px-[7px] lg:text-[20px] text-[16px] text-[#fff] font-medium tracking-tight hover:text-[#006737] whitespace-nowrap ease-out duration-100">트레이너 소개</a></li>
+						<li class="flex-[0 0 auto] lg:ml-[25px] ml-[12px]"><a href="#" class="lg:px-[15px] px-[7px] lg:text-[20px] text-[16px] text-[#fff] font-medium tracking-tight hover:text-[#006737] whitespace-nowrap ease-out duration-100">시설안내</a></li>
+						<li class="flex-[0 0 auto] lg:ml-[25px] ml-[12px]"><a href="#" class="lg:px-[15px] px-[7px] lg:text-[20px] text-[16px] text-[#fff] font-medium tracking-tight hover:text-[#006737] whitespace-nowrap ease-out duration-100">프로그램</a></li>
+						<li class="flex-[0 0 auto] lg:ml-[25px] ml-[12px]"><a href="#" class="lg:px-[15px] px-[7px] lg:text-[20px] text-[16px] text-[#fff] font-medium tracking-tight hover:text-[#006737] whitespace-nowrap ease-out duration-100">오시는길</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+        <main id="main" class="container mx-auto">
+            <h1 class="mb-6 p-8 text-neutral-950 text-2xl underline decoration-1 underline underline-offset-8">트레이너 소개</h1>
+            <div class="flex justify-center">
+                <img src="./img/profile.png" class="w-1/3 h-1/3 p-5" />
+                <div class="p-5">
+                    <h2 class="text-4xl font-semibold border-b-2 pb-3 mb-5">박창현 대표</h2>
+                    <ul>
+                        <li class="mb-2 text-2xl">임시 체육학과 졸업</li>
+                        <li class="mb-2 text-2xl">전 에임핏 트레이너</li>
+                        <li class="mb-2 text-2xl">생활 스포츠 지도사 2급</li>
+                        <li class="mb-2 text-2xl">임시 체육학과 졸업</li>
+                        <li class="mb-2 text-2xl">임시 체육학과 졸업</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+		<footer class="bg-[#000] mt-10">
+			<div class="container mx-auto lg:px-[40px] px-[10px] py-[30px] ease-out duration-300">
+				<div class="flex flex-wrap">
+					<div class="lg:w-[60%] w-[100%] text-[#eee] lg:text-[15px] text-[13px] lg:leading-[30px] leading-[24px]">
+						<span class="inline-block pr-[20px] ease-out duration-300">㈜BELL GROUND GYM</span>
+						<span class="inline-block pr-[20px] ease-out duration-300">000-00-00000</span>
+						<span class="inline-block pr-[20px] ease-out duration-300">[13487] 경기도 성남시 분당구 판교로228번길 15 판교세븐벤처벨리 2층</span>
+						<span class="inline-block pr-[20px] ease-out duration-300">example@gmail.com</span>
+					</div>
+					<div class="flex lg:justify-end justify-start lg:w-[40%] w-[100%] lg:mt-[0] mt-[20px]">
+						<a href="#" class="inline-block bg-[url('./img/icon_insta.png')] bg-no-repeat bg-center bg-cover lg:w-[46px] w-[38px] lg:h-[46px] h-[38px] text-[0] ease-out duration-300">인스타그램</a>
+					</div>
+				</div>
+			</div>
+			<div class="bg-[#111]">
+				<div class="container mx-auto lg:px-[40px] px-[10px] py-[10px] ease-out duration-300 text-right">
+					<span class="text-[#989898] lg:text-[16px] text-[14px] font-[200]">Powered by <a href="#" class="lg:ml-[10px] ml-[6px] text-[#eee] lg:text-[20px] text-[18px] font-[800]  ease-out duration-300">ZNPYNK</a></span>
+				</div>
+			</div>
+		</footer>
+    </div>
 </body>
 </html>

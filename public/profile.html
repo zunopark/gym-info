@@ -5,15 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>벨그라운드짐</title>
+	<link rel="shortcut icon" href="./img/logo.png">
 	<link rel="stylesheet" href="../dist/output.css"></link>
-	<script src="../dist/main.js"></script>
 </head>
 <body>
     <div id="wrap">
+		<header class="w-full lg:h-[100px] h-[80px] before:content-[''] before:absolute before:bg-gradient-to-b before:from-[rgba(0,0,0,.25)] before:w-full before:h-[120px] z-[100]">
+			<div class="container flex items-center justify-between relative h-full mx-auto lg:px-[40px] px-[10px] ease-out duration-300 z-5">
+				<h1>
+					<a href="index.html" class="block bg-[url('../public/img/logo.png')] bg-no-repeat bg-center bg-cover lg:w-[80px] w-[60px] lg:h-[80px] h-[60px] text-[0] leading-[0] ease-out duration-300">BELL GROUND GYM</a>
+				</h1>
+				<nav class="lg:overflow-y-hidden overflow-y-scroll lg:w-fit w-[calc(100%-90px)] scrollbar-hide">
+					<ul class="flex w-fit ml-auto">
+						<li class="flex-1"><a href="profile.html" class="lg:px-[15px] px-[7px] lg:text-[20px] text-[16px] text-[#fff] font-medium tracking-tight hover:text-[#006737] whitespace-nowrap ease-out duration-100">인사말</a></li>
+						<li class="flex-[0 0 auto] lg:ml-[25px] ml-[12px]"><a href="present.html" class="lg:px-[15px] px-[7px] lg:text-[20px] text-[16px] text-[#fff] font-medium tracking-tight hover:text-[#006737] whitespace-nowrap ease-out duration-100">트레이너 소개</a></li>
+						<li class="flex-[0 0 auto] lg:ml-[25px] ml-[12px]"><a href="#" class="lg:px-[15px] px-[7px] lg:text-[20px] text-[16px] text-[#fff] font-medium tracking-tight hover:text-[#006737] whitespace-nowrap ease-out duration-100">시설안내</a></li>
+						<li class="flex-[0 0 auto] lg:ml-[25px] ml-[12px]"><a href="#" class="lg:px-[15px] px-[7px] lg:text-[20px] text-[16px] text-[#fff] font-medium tracking-tight hover:text-[#006737] whitespace-nowrap ease-out duration-100">프로그램</a></li>
+						<li class="flex-[0 0 auto] lg:ml-[25px] ml-[12px]"><a href="#" class="lg:px-[15px] px-[7px] lg:text-[20px] text-[16px] text-[#fff] font-medium tracking-tight hover:text-[#006737] whitespace-nowrap ease-out duration-100">오시는길</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
         <main id="main" class="container mx-auto">
             <h1 class="mb-6 p-8 text-neutral-950 text-2xl underline decoration-1 underline underline-offset-8">인사말</h1>
-            <div class="overflow-hidden cursor-pointer shadow-md">
-                <img src="../dist/img/profile.png" class="w-4/6 h-4/6 mx-auto hover:scale-105 transition ease-in-out delay-100" />
+            <div class="overflow-hidden cursor-pointer">
+                <img src="./img/profile.png" class="shadow-md w-1/3 h-1/3 mx-auto hover:scale-105 transition ease-in-out delay-100" />
             </div>
             <p class="mt-10 text-xl tracking-wide">안녕하세요, <strong>벨그라운드짐(BELL GROUND GYM) 대표 박창현</strong>입니다.</p>
             <p class="text-xl">벨그라운드 짐은 스트렝스 및 움직임 전문 체육관입니다.
@@ -21,8 +37,28 @@
             <br/>이름은 벨 (바벨, 케틀벨, 덤벨, 인디언클럽벨)과 playground(놀이터)의 의미를 합친 뜻이고. 여러분들이 벨들을 가지고 놀고 학습하는 공간이 되었으면 해서 벨그라운드짐이 탄생하게 되었습니다.</p>
             <br/>
             <p class="text-xl">저희의 목표는 여러분들이 힘(strength)과 올바른 움직임을 얻음으로써 삶에 여분의 체력이 생겨 일상생활이 풍요로워지게끔 느끼게 하는 것이 저희 벨그라운 짐의 목표입니다.</p>
-            <img src="../dist/img/logo.png" class="w-60 h-60 mx-auto mt-4" />
+            <img src="./img/logo.png" class="w-60 h-60 mx-auto mt-4" />
         </main>
+		<footer class="bg-[#000] mt-10">
+			<div class="container mx-auto lg:px-[40px] px-[10px] py-[30px] ease-out duration-300">
+				<div class="flex flex-wrap">
+					<div class="lg:w-[60%] w-[100%] text-[#eee] lg:text-[15px] text-[13px] lg:leading-[30px] leading-[24px]">
+						<span class="inline-block pr-[20px] ease-out duration-300">㈜BELL GROUND GYM</span>
+						<span class="inline-block pr-[20px] ease-out duration-300">000-00-00000</span>
+						<span class="inline-block pr-[20px] ease-out duration-300">[13487] 경기도 성남시 분당구 판교로228번길 15 판교세븐벤처벨리 2층</span>
+						<span class="inline-block pr-[20px] ease-out duration-300">example@gmail.com</span>
+					</div>
+					<div class="flex lg:justify-end justify-start lg:w-[40%] w-[100%] lg:mt-[0] mt-[20px]">
+						<a href="#" class="inline-block bg-[url('./img/icon_insta.png')] bg-no-repeat bg-center bg-cover lg:w-[46px] w-[38px] lg:h-[46px] h-[38px] text-[0] ease-out duration-300">인스타그램</a>
+					</div>
+				</div>
+			</div>
+			<div class="bg-[#111]">
+				<div class="container mx-auto lg:px-[40px] px-[10px] py-[10px] ease-out duration-300 text-right">
+					<span class="text-[#989898] lg:text-[16px] text-[14px] font-[200]">Powered by <a href="#" class="lg:ml-[10px] ml-[6px] text-[#eee] lg:text-[20px] text-[18px] font-[800]  ease-out duration-300">ZNPYNK</a></span>
+				</div>
+			</div>
+		</footer>
     </div>
 </body>
 </html>
