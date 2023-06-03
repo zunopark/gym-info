@@ -5,8 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BELL GROUND GYM</title>
-	<link rel="stylesheet" type="text/css" href="../dist/output.css"></link>
 	<script type= text/javascript src="../dist/main.js"></script>
+	<link rel="shortcut icon" href="../dist/img/logo.png">
+	<link rel="stylesheet" href="../dist/output.css"></link>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
 	<div id="wrap">
@@ -15,7 +17,7 @@
 				<h1>
 					<a href="index.html" class="block bg-[url('../dist/img/logo.png')] bg-no-repeat bg-center bg-cover lg:w-[80px] w-[60px] lg:h-[80px] h-[60px] text-[0] leading-[0] ease-out duration-300">BELL GROUND GYM</a>
 				</h1>
-				<nav class="lg:overflow-y-hidden overflow-y-scroll lg:w-fit w-[calc(100%-90px)]">
+				<nav class="lg:overflow-y-hidden overflow-y-scroll lg:w-fit w-[calc(100%-90px)] scrollbar-hide">
 					<ul class="flex w-fit ml-auto">
 						<li class="flex-1"><a href="profile.html" class="lg:px-[15px] px-[7px] lg:text-[20px] text-[16px] text-[#fff] font-medium tracking-tight hover:text-[#006737] whitespace-nowrap ease-out duration-100">인사말</a></li>
 						<li class="flex-[0 0 auto] lg:ml-[25px] ml-[12px]"><a href="present.html" class="lg:px-[15px] px-[7px] lg:text-[20px] text-[16px] text-[#fff] font-medium tracking-tight hover:text-[#006737] whitespace-nowrap ease-out duration-100">트레이너 소개</a></li>
@@ -27,13 +29,30 @@
 			</div>
 		</header>
 		<main>
-			<div class="overflow-hidden h-screen">
-				<ul class="flex h-full">
-					<li class="flex-none relative w-full h-full before:absolute before:w-full before:h-full before:bg-[rgba(0,0,0,.5)]"><img src="../dist/img/banner1.jpg" alt="" class="w-full h-full object-cover"></li>
-					<li class="flex-none w-full h-full"><img src="../dist/img/banner2.jpg" alt="" class="w-full h-full object-cover"></li>
-					<li class="flex-none w-full h-full"><img src="../dist/img/banner3.jpg" alt="" class="w-full h-full object-cover"></li>
+			<div class="main_visual overflow-hidden h-screen">
+				<ul class="swiper-wrapper flex h-full">
+					<li class="swiper-slide flex-none relative w-full h-full before:absolute before:w-full before:h-full before:bg-[rgba(0,0,0,.5)]">
+						<img src="../dist/img/banner1.jpg" alt="" class="w-full h-full object-cover">
+						<div class="absolute top-[50%] w-full text-center transform -translate-y-2/4">
+							<strong class="text-[#fff] text-[80px] drop-shadow-[5px_5px_5px_rgba(0,0,0,0.5)]">BELL GROUND GYM</strong>
+							<span class="block text-center text-[#fff] text-[30px] font-extralight drop-shadow-[5px_5px_5px_rgba(0,0,0,0.5)]">변화가 시작 되는 곳</span>
+						</div>
+					</li>
+					<li class="swiper-slide flex-none w-full h-full before:absolute before:w-full before:h-full before:bg-[rgba(0,0,0,.5)]">
+						<img src="../dist/img/banner2.jpg" alt="" class="w-full h-full object-cover">
+						<div class="absolute top-[50%] w-full text-center transform -translate-y-2/4">
+							<strong class="text-[#fff] text-[80px] drop-shadow-[5px_5px_5px_rgba(0,0,0,0.5)]">제목2</strong>
+							<span class="block text-center text-[#fff] text-[30px] font-extralight drop-shadow-[5px_5px_5px_rgba(0,0,0,0.5)]">소제목2</span>
+						</div>
+					</li>
+					<li class="swiper-slide flex-none w-full h-full before:absolute before:w-full before:h-full before:bg-[rgba(0,0,0,.5)]">
+						<img src="../dist/img/banner3.jpg" alt="" class="w-full h-full object-cover">
+						<div class="absolute top-[50%] w-full text-center transform -translate-y-2/4">
+							<strong class="text-[#fff] text-[80px] drop-shadow-[5px_5px_5px_rgba(0,0,0,0.5)]">제목3</strong>
+							<span class="block text-center text-[#fff] text-[30px] font-extralight drop-shadow-[5px_5px_5px_rgba(0,0,0,0.5)]">소제목3</span>
+						</div>
+					</li>
 				</ul>
-			</div>
 		</main>
 		<footer class="bg-[#000]">
 			<div class="container mx-auto lg:px-[40px] px-[10px] py-[30px] ease-out duration-300">
@@ -57,4 +76,16 @@
 		</footer>
 	</div>
 </body>
+<script>
+	var mainBanner = new Swiper(".main_visual", {
+		speed: 400,
+		slidesPerView: 1,
+		loop: true,
+		allowTouchMove: false,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
+		},
+	});
+</script>
 </html>
