@@ -7,7 +7,8 @@
     "build-css-dev": "npx tailwindcss -i ./src/style.css -o ./dist/output.css -w",
     "build-css": "npx tailwindcss -i ./src/style.css -o ./dist/output.css",
     "build-js": "webpack --mode=production",
-    "build" : "npx tailwindcss -i ./src/style.css -o ./dist/output.css && webpack --mode=production"
+    "build-local" : "npx tailwindcss -i ./src/style.css -o ./dist/output.css && webpack --mode=production",
+    "build" : "npx tailwindcss -i ./src/style.css -o ./public/dist/output.css"
   },
   "author": "",
   "license": "ISC",
